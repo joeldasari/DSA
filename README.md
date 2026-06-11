@@ -1,3 +1,3 @@
-# dsa
+# DSA
 
-- blind 75
+- Blind 75
