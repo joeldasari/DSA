@@ -1,0 +1,13 @@
+Problem: Find Anagram in String
+
+Given a string `text` and a string `pattern`, return `True` if any substring of `text` with length equal to `len(pattern)` is an anagram of `pattern`, otherwise return `False`.
+
+Example:
+Input: text = "cbaebabacd", pattern = "abc"
+Output: True
+Explanation: Substring "cba" (index 0-2) is an anagram of "abc" ✓
+
+Example 2:
+Input: text = "hello", pattern = "abc"
+Output: False
+Explanation: No substring of length 3 is an anagram of "abc"
