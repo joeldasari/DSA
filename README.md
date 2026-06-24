@@ -1,3 +1,4 @@
 # DSA
 
-- Blind 75 -> Neetcode 150
+- Blind 75
+- Neetcode 150
