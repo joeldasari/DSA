@@ -1,3 +1,4 @@
+"""
 Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 
 Notice that the solution set must not contain duplicate triplets.
@@ -22,3 +23,40 @@ Example 3:
 Input: nums = [0,0,0]
 Output: [[0,0,0]]
 Explanation: The only possible triplet sums up to 0.
+
+"""
+
+def three_sum(nums):
+    res = []    
+    # two pointers approach
+    # sort the array
+    nums.sort() # Time complexity: O(nlogn)
+
+    # -4 -1 -1 -1 1 2
+
+    for i in range(len(nums)):
+        if i > 0 and nums[i] == nums[i - 1]:
+            continue
+
+        j = i + 1
+        k = len(nums) - 1
+
+        while j < k:
+            target = nums[i] + nums[j] + nums[k]
+
+            if target < 0:
+                j += 1
+            elif target > 0:
+                k -= 1
+            else:
+                res.append([nums[i], nums[j], nums[k]])
+                j += 1
+                while j < k and nums[j] == nums[j - 1]:
+                    j += 1
+    return res
+
+
+print(three_sum([-1,-1,1,2,-1,-4]))
+
+# Time complexity: O(n ^ 2)
+# Space complexity: O(1)

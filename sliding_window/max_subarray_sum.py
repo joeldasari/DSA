@@ -1,4 +1,19 @@
-def max_subarray(arr, k):
+"""
+
+- Given an array of integers and an integer k
+
+- Find the maximum sum of a subarray of size k
+
+Example:
+
+Input: arr = [2, 1, 5, 1, 3, 2], k = 3
+Output: 9
+
+Explanation: Subarray [5, 1, 3] has the maximum sum of 9.
+
+"""
+
+def max_subarray_sum(arr, k):
     current_sum = sum(arr[:k])
     max_sum = current_sum
     for i in range(len(arr) - k):
@@ -12,7 +27,7 @@ arr = [2, 1, 5, 1, 3, 2]
 
 k = 3
 
-print(max_subarray(arr, k))
+print(max_subarray_sum(arr, k))
 
 # the sliding window size is fixed
 
@@ -22,4 +37,3 @@ print(max_subarray(arr, k))
 # sum(arr[:k]) - time complexity is O(k), and overall we take O(n) time complexity
 
 # space complexity: O(1) - only a few single-value variables used (no data structures ex: list, dict, etc.)
-

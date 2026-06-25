@@ -1,0 +1,7 @@
+Arrays:
+
+- An array is a fixed-type, fixed-size (in many languages) block of contiguous memory — all elements are the same type, like int[5].
+
+- A list (e.g., Python's list) is more flexible — it can hold mixed types and grows/shrinks dynamically.
+
+- In Python specifically, the built-in list is actually implemented as a dynamic array under the hood, so the distinction blurs. But in general computer science terms (and in typed languages like Java, C, C++), arrays and lists are distinct data structures with different guarantees.

@@ -1,3 +1,21 @@
+"""
+Problem: Count Subarrays with Sum Equal to Target of Size K
+Given an array of integers, an integer k, and a target value, find the count of subarrays of size exactly k whose sum equals the target.
+Example:
+
+Input: arr = [1, 2, 3, 2, 4, 2, 5], k = 3, target = 6
+
+Output: 2
+
+Explanation: Subarrays of size 3 with sum 6:
+
+[1, 2, 3] → sum = 6 ✓
+[2, 2, 2] — doesn't exist here
+[2, 4, 2] — sum = 8 ✗
+Actually: [1,2,3] = 6 ✓ and [2,3,2] = 7 ✗ and [3,2,4] = 9 ✗ and [2,4,2] = 8 ✗ and [4,2,5] = 11 ✗
+
+"""
+
 # def subarray_sum_count(arr, k, target):
 #     count = 0
 #     for i in range(len(arr) - k + 1):
@@ -34,5 +52,3 @@ k = 3
 target = 6
 
 print(subarray_sum_count(arr, k, target))
-
-

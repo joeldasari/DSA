@@ -1,3 +1,16 @@
+"""
+Problem: Maximum Product Subarray of Size K
+Given an array of integers and an integer k, find the maximum product of any contiguous subarray of size exactly k.
+Example:
+
+Input: arr = [1, -2, -3, 0, 7, -8, -2], k = 3
+
+Output: 112
+
+Explanation: Subarray [7, -8, -2] has product 7 * (-8) * (-2) = 112.
+
+"""
+
 def max_subarray_product(arr, k): 
     max_prod = float("-inf")
     for i in range(len(arr) - k + 1):

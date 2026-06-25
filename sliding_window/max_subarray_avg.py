@@ -1,4 +1,12 @@
-def max_avg_subarray(nums, k):
+"""
+
+- Given an integer array nums and an integer k
+
+- Find a contiguous subarray whose length is equal to k that has the maximum average value and return this value.
+
+"""
+
+def max_subarray_avg(nums, k):
     cur_sum = sum(nums[:k])
     max_sum = cur_sum
 
@@ -11,7 +19,7 @@ def max_avg_subarray(nums, k):
 nums = [1,12,-5,-6,50,3]
 k = 4
 
-print(max_avg_subarray(nums, k))
+print(max_subarray_avg(nums, k))
 
 # same as max subarray sum 
 
